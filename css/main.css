@@ -1,18 +1,18 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
+    color: #447;
     font-size: 1em;
     line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #cccccc;
+    background: inherit;
     text-shadow: none;
 }
 
 ::selection {
-    background: #cccccc;
+    background: inherit;
     text-shadow: none;
 }
 
@@ -61,13 +61,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(http://www.history.com/s3static/video-thumbnails/AETN-History_VMS/21/202/tdih-aug15-HD.jpg);
+    background-image: url(https://theultralinx.com/.image/c_limit%2Ccs_srgb%2Cq_80%2Cw_615/MTI5MDI1Nzg1MjM4NDI2ODk4/6012018112_bd20637511_o.webp);
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
+
 
 /* ===================
     ALL: Orange Theme
@@ -98,20 +95,20 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 1.3em;
 
-    color: #000;
-    background: #cccccc;
+    color: #447;
+    background: url("../img/paper.jpg");
+        text-shadow: #fff 1px 1px 1px;
+
 }
 
 nav a.active {
-    background: #eeeeee;
+    text-decoration: underline;
+    color: #447;
 }
 
-nav a:hover,
-nav a:visited {
-    color: red;
-}
 
 nav a:hover {
     text-decoration: underline;
@@ -123,11 +120,14 @@ nav a:hover {
 
 .main {
     background-color: #eeeeee;
+    background: url("../img/paper.jpg");
+    background-color: antiquewhite;
     padding: 30px 0;
+        box-shadow: inset #6406 0px 0px 100px;
 }
 
 .main-inner {
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .main article h1 {
@@ -156,9 +156,62 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+img.stamp {
+    max-width: 200px;
+    float: right;
+    margin-right: -2em;
+}
 
+.telegram {
+    font-family: 'Vast Shadow', cursive;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+letter-spacing: .15em;
+    margin: 0 0 2em;
+    border-bottom: solid 1px;
+    padding-bottom: .4em;
+}
 
+article h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+letter-spacing: .1em;
+    margin: 2em 0 1em;
+    line-height: 1.2em;
+}
 
+h1.title {
+    font-family: 'Homemade Apple', cursive;
+  font-weight: 100;
+  font-size: 4em;
+      line-height: 1em;
+    text-indent: 1em;
+    margin: .4em 0 0;
+}
+
+h2 {
+        text-transform: uppercase;
+letter-spacing: .1em;
+          font-family: 'Abril Fatface', cursive;
+
+  font-weight: 100;
+}
+
+article footer {
+    margin-top: 2em;
+    font-size: 1.4em;
+      font-family: 'La Belle Aurore', cursive;
+          border: solid 2px;
+    padding: 1em;
+}
+
+article {
+    text-shadow: #fff 1px 1px 1px;
+    text-align: center;
+}
 
 
 
@@ -176,16 +229,24 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
+
+
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+    nav {
+        transform: rotate(2deg);
+            margin: 0 1em;
+
+    }
 
     nav a {
         float: left;
         width: 27%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 25px 2% 60px;
         margin-bottom: 0;
+        box-shadow: inset #4465 0px -40px 30px;
     }
 
     nav li:first-child a {
@@ -195,6 +256,20 @@ nav a:hover {
     nav li:last-child a {
         margin-right: 0;
     }
+
+    .header-container {
+    height: 70px;
+    overflow: hidden;
+    padding-top: 20px;
+   }
+   .main-inner {
+    padding: 0 30px;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 5%;
+}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -216,9 +291,7 @@ nav a:hover {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
+
 
     nav {
         float: right;
@@ -228,26 +301,26 @@ nav a:hover {
 /* ============
     WIDE: Main
    ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
+h1.title {
+    text-indent: 0;
+}
+    .main {
+    padding: 40px 0;
     }
 
-    .main aside {
-        float: right;
-        width: 28%;
+    .main-inner {
+        padding: 0 60px;
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 900px) {
 
 /* ===============
     Maximal Width
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 800px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
