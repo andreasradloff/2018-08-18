@@ -190,12 +190,15 @@ img.tallrik {
     margin-right: -3em;
 }
 
-.telegram {
+.telegram, strong {
     font-family: 'Vast Shadow', cursive;
     font-weight: 100;
+    letter-spacing: .15em;
+}
+
+.telegram {
     text-align: center;
     text-transform: uppercase;
-letter-spacing: .15em;
     margin: 0 0 2em;
     border-bottom: solid 1px;
     padding-bottom: .4em;
@@ -242,9 +245,15 @@ article {
     text-align: center;
 }
 
+article.article--program {
+    text-align: left;
+}
 
 
-
+.article--program p {
+    text-indent: -5em;
+    margin-left: 5em
+}
 
 
 
